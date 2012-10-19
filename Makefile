@@ -30,7 +30,7 @@ clean:
 	del $(DLLFILE)
 
 register:
-	regsvr32 /i /n $(DLLFILE)
+	regsvr32 /i $(DLLFILE)
 
 unregister:
 	regsvr32 /u $(DLLFILE)

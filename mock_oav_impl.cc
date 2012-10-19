@@ -38,10 +38,10 @@ const WCHAR* PrintableString(const WCHAR* str) {
  uuid("9EF58E5C-9837-46EE-AE33-A490253D229D"),
  threading(both)
 ]
-class MockOAVImpl : public IOfficeAntiVirus
+class CMockOAVImpl : public IOfficeAntiVirus
 {
  public:
-  MockOAVImpl() {}
+  CMockOAVImpl() {}
 
   // Implementation of Scan(). Logs some stuff and invokes HandleScanRequest()
   // to do the actual work.
